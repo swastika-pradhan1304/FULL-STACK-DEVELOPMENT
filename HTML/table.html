@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Understanding rowspan and colspan</title>
+    <style>
+        table, tr, td{
+            border: 1px solid black;
+            border-collapse: collapse;
+            text-align: center;
+            /* caption-side: bottom; */
+            /* if bottom mein chahiye */
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Schedule for Exams</caption>
+        <colgroup>
+            <col span="" style="background-color: beige;">
+        </colgroup>
+        
+        <tr>
+            <td rowspan="3">Day</td>
+            <td colspan="3">Exam</td>
+        </tr>
+        <tr>
+            <td colspan="2">Schedule</td>
+            <td rowspan="2">Topics</td>
+        </tr>
+        <tr>
+            <td>Start</td>
+            <td>End</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Monday</td>
+            <td rowspan="2">8:00AM</td>
+            <td rowspan="2">5:00PM</td>
+            <td>HTML</td>
+        </tr>
+        <tr>
+            <td>CSS</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Tuesday</td>
+            <td>8:00AM</td>
+            <td>12:00AM</td>
+            <td>C++</td>
+        </tr>
+        <tr>
+            <td>12:00PM</td>
+            <td>5:00PM</td>
+            <td>Java</td>
+        </tr>
+        <tr>
+            <td>Wednesday</td>
+            <td colspan="2">12:00PM</td>
+            <td>Result</td>
+        </tr>
+    </table>
+    <hr>
+
+        <table>
+            <caption>Fasting and eating table</caption>
+            <tr>
+                <td rowspan="2">State of Health</td>
+                <td colspan="2">Fasting Value</td>
+                <td>After Fasting</td>
+            </tr>
+            <tr>
+                <td>Minimum</td>
+                <td>Maximum</td>
+                <td>2 hours after eating</td>
+            </tr>
+            <tr>
+                <td>Healthy</td>
+                <td>70</td>
+                <td>100</td>
+                <td>Less than 140</td>
+            </tr>
+            <tr>
+                <td>Pre-diabetes</td>
+                <td>101</td>
+                <td>126</td>
+                <td>140 to 200</td>
+            </tr>
+            <tr>
+                <td>Diabetes</td>
+                <td>More than 126</td>
+                <td>N/A</td>
+                <td>More than 200</td>
+            </tr>
+    </table>
+</body>
+</html>
