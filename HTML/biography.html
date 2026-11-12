@@ -8,22 +8,41 @@
         html{
             scroll-behavior: smooth;
         }
+        aside{
+            width: 40%;
+            float: right;
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
+    <header>
     <h1>Linus Torvalds</h1>
     <p>The creator of Linux</p>
-    <a href="#resources" style="color: rosybrown;">Go to Resources</a>
+    </header>
+
+    <nav>
+    <a href="#resources" style="color: rosybrown;">Go to Resources</a></br>
+    <a href="#biography" style="color: rosybrown;">Go to Biography</a></br>
+    <a href="#achievements" style="color: rosybrown;">Go to Achievements</a>
+    </nav>
 
     <figure>
     <img src="images/linus-torvalds-ted.jpg" alt="Linus Torvalds" height="200" width="300">
     <figcaption>A photograph of Linus Torvalds</figcaption>
     </figure>
 
-    <h2>Biography</h2>
+    <section>
+    <h2 id="biography">Biography</h2>
     <p>Linus Torvalds is a Finnish American software engineer who is the creator and principal developer of the Linux kernel, which is the kernel for a number of operating systems. He also created the version control system Git. Torvalds was born on December 28,1969 in Helsinki, Finland. He studied computer science at the University of Helsinki, and he developed the Linux kernel as a student project in 1991. Since then, the kernel has become one of the most widely used kernels in the world, powering everything from smartphones to supercomputers.</p>
+    </section>
 
-    <h2>Achievements</h2>
+    <aside>
+        Linus Torvalds is a Finnish American software engineer who is the creator and principal developer of the Linux kernel, which is the kernel for a number of operating systems. He also created the version control system Git. Torvalds was born on December 28,1969 in Helsinki, Finland.
+    </aside>
+
+    <section>
+    <h2 id="achievements">Achievements</h2>
     <ul>
         <li><strong>Creator of the Linux Kernel-</strong> In 1991, while a University of Helsinki student, Torvalds developed the Linux operating system as part of his Master's thesis, releasing version 0.01 publicly on September 17, 1991</li>
         <li><strong>Lead Developer of Linux-</strong> He has been the principal architect and maintainer of the Linux kernel since its inception, steering its development into the world's most widely used operating system kernel </li>
@@ -37,7 +56,9 @@
             <cite>--Time magazine <a href="https://www.thefamouspeople.com/profiles/linus-torvalds-3972.php">The Famous People</a></cite>
         </blockquote>
     </ul>
+    </section>
 
+    <section>
     <h2 id="resources">Resources</h2>
     <p>Learn more about Linus Torvalds and his works:</p>
     <ul>
@@ -51,6 +72,7 @@
             <a href="https://www.explainx.ai/blog/linus-torvalds-ai-things-im-bad-at-vibe-coding-kernel-review-2026">Linua Torvalds on AI</a>
         </li>
     </ul>
+    </section>
 </body>
 <hr>
 
