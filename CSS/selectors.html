@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+        p{
+            color: red;
+            font-size: larger;
+        }
+        h1{
+            background-color: aqua;
+        }
+        .green{
+            color: green;
+        }
+        .blue{
+            color: blue;
+        }
+        .head1{
+            font-size: small;
+        }
+        .head2{
+            font-size: larger;
+        }
+        /* #first-button{
+            color: red;
+        } */
+        #intro-para{
+            background-color: antiquewhite;
+        }
+
+        /* pseudo-class selector */
+        button:hover{
+            color: blueviolet;
+        }
+        a:hover{
+            color: brown;
+        }
+        .link-color:hover{
+            color: cadetblue;
+        }
+    </style>
+</head>
+<body>
+    <!-- Element selector -->
+    <p>This is my first paragraph</p>
+    <p>This is my second paragraph</p>
+    <h1>This is my first heading</h1>
+    <h1>This is my second heading</h1>
+
+    <!-- Class selector -->
+     <p class="green">abcd</p>
+     <p class="green">pqrs</p>
+     <p class="blue">xyz</p>
+
+     <h1 class="head1">Heading 1</h1>
+     <h2 class="head1">Heading 2</h2>
+     <h3 class="head1">Heading 3</h3>
+     <h4 class="head2">Heading 4</h4>
+     <h5 class="head2">Heading 5</h5>
+     <h6 class="head2">Heading 6</h6>
+
+     <!-- ID selector -->
+      <p id="intro-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, ipsam. Consequuntur inventore vel recusandae obcaecati eum quis necessitatibus autem repudiandae!</p>
+      <button id="first-button">Submit</button>
+
+     <!-- Pseudo-class selector -->
+      <a href="https://www.google.com">Click me</a>
+      <!-- we can use id also in the below case -->
+      <a class="link-color" href="https://www.instagram.com">Instagram</a>
+</body>
+</html>
