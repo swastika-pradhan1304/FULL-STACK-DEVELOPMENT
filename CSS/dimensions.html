@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensions & overflow property in CSS</title>
+    <style>
+        .box{
+            max-height: 100px;
+            border: 1px solid black;
+        }
+        .mydiv{
+            margin: 10px;
+            border: 1px solid black;
+            min-height: 100px;
+        }
+        #divi{
+            height: 50px;
+            border: 1px solid black;
+            /* content will be visisble as it is */
+            overflow: visible;
+            /* content can be scrolled */
+            overflow: scroll;
+            /* content gets hidden if it goes outside the block */
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <!-- limit is set and if the words exceed then it will overflow -->
+    <div class="box">Hello everyone! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis consectetur nostrum sed ullam pariatur ex unde explicabo modi, debitis totam accusamus consequatur. Quos ullam molestias iusto voluptatem sint odit earum.
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur autem, cum sed totam quibusdam ab fuga molestias, neque illum facilis voluptatum error iure a. Officia nemo explicabo quis aliquam fuga sed culpa incidunt tempore, rem quod nihil. Maiores, laborum? Iure, iusto! Corporis ullam quod, reiciendis voluptatibus 
+    impedit nulla amet vitae?</div>
+    <!-- if the words exceed the box will expand automatically according to the needs
+      -->
+    <div class="mydiv">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur dignissimos aliquam nisi nam reprehenderit provident explicabo numquam, iure nemo aut.</div>
+
+    <div id="divi">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, harum! Quasi ex libero consequuntur! Officia quasi voluptatem facilis delectus nam temporibus totam suscipit rerum, iure sapiente culpa! Assumenda, perferendis minima. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, dolore?</div>
+</body>
+</html>
