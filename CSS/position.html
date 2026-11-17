@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS position property</title>
+    <style>
+        p{
+            position: static;
+        }
+        /* div{
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        .box{
+            position: relative;
+            left: 15px;
+            top: 100px;
+        } */
+
+        div{
+            display: inline-block;
+            width: 150px;
+            height: 150px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        .wrapper{
+            height: 100vh;
+            width: 2000px;
+            background-color: antiquewhite;
+
+        }
+        #box3{
+            position: relative;
+            position: absolute;
+            top: 100px;
+            left: 50px;
+        }
+        #box1{
+            position: fixed;
+        }
+        #box4{
+            position: sticky;
+            top: 0px;
+        }
+    </style>
+</head>
+<body>
+    <p>This is a para</p>
+    <h1>Heading 1</h1>
+    <p>Second para</p>
+    <h2>Second heading</h2>
+
+    <!-- <div class="box">ABCD</div> -->
+
+    <div class="wrapper">
+        <div class="box" id="box1">A</div>
+        <div class="box" id="box2">B</div>
+        <div class="box" id="box3">C</div>
+        <div class="box" id="box4">D</div>
+    </div>
+    
+</body>
+</html>
