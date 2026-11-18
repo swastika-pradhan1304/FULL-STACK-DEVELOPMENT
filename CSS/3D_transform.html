@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3d transform</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: aqua;
+            border: 1px solid black;
+        }
+        .translated{
+            transform: perspective(10px) translateZ(-10px);
+        }
+        .scaled{
+            margin-left: 200px;
+            transform: perspective(350px) scaleZ(6) rotateX(45deg) rotateY(30deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="static">ABCD</div>
+    <div class="translated">ABCD</div>
+    <div class="scaled">ABCD</div>
+</body>
+</html>
