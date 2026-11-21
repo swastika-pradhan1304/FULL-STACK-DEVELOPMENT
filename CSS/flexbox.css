@@ -1,0 +1,15 @@
+.container{
+        height: 400px;
+        border: 2px solid green;
+        display: flex;
+        /* flex-direction: column;
+        flex-direction: column-reverse; */
+        /* to keep width intact use flex-wrap */
+        flex-wrap: wrap;
+    }
+
+.box{
+    border: 1px solid brown;
+    background-color: aqua;
+    width: 50px;
+}
