@@ -6,10 +6,34 @@
         flex-direction: column-reverse; */
         /* to keep width intact use flex-wrap */
         flex-wrap: wrap;
+        /* flex-wrap: wrap-reverse;  */
+        /* flex-flow: column nowrap; */
+        
+        justify-content: center;
+        align-items: center;
+        /* gap: 10px; */
+        /* cross-axis ke according alignment */
+        align-content: flex-start;
+        /* align-content: flex-end; */
     }
 
 .box{
     border: 1px solid brown;
     background-color: aqua;
-    width: 50px;
+    /* width: 50px; */
+    /* sb boxes pe apply hoga, if you want on a single box apply it individually */
+    flex-grow: 1;
+    flex-shrink: 4;
+}
+
+#box1{
+    order: 1;
+}
+
+#box3{
+    order: 8;
+}
+
+#box2{
+    order: 4;
 }
