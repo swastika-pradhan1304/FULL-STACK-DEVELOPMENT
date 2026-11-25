@@ -1,9 +1,14 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
         height: 400px;
         border: 2px solid green;
         display: flex;
-        /* flex-direction: column;
-        flex-direction: column-reverse; */
+        flex-direction: column;
+        flex-direction: row;
         /* to keep width intact use flex-wrap */
         flex-wrap: wrap;
         /* flex-wrap: wrap-reverse;  */
@@ -22,18 +27,26 @@
     background-color: aqua;
     /* width: 50px; */
     /* sb boxes pe apply hoga, if you want on a single box apply it individually */
-    flex-grow: 1;
-    flex-shrink: 4;
+    /* flex-grow: 1;
+    flex-shrink: 4; */
+    /* content automatically fits in the box */
+    flex-basis: 50%;  
+     /*the content overflowing is not displayed and gets cut in case of width*/
+    /* width: 100px; */
+    width: 150px;
 }
 
 #box1{
     order: 1;
+    /* align-self: flex-start; */
 }
 
 #box3{
     order: 8;
+    /* align-self: flex-end; */
 }
 
 #box2{
     order: 4;
+    /* align-self: stretch; */
 }
